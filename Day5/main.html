@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 1;
+        x && console.log('Hi');
+
+        var y = 0;
+        y && console.log('by');
+
+        console.log(1 || 2 || 3);
+        console.log(0 || 2 || 3);
+
+        var t = true;
+        console.log(!t);
+
+        var a = 10;
+        var b = 20;
+        console.log(a == b); // --> False
+        console.log(a != b); // --> True
+        
+        var c = 10;
+        var t = '10';
+        console.log(c == t); // --> True
+        console.log(c === t); // --> False
+        console.log(c !== t); // --> True
+// ------------------------------------------
+        console.log(a > b); // --> False
+    </script>
+</body>
+</html>

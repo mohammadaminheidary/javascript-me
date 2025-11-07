@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var age = prompt('How old are you?');
+        if (age > 18 && age < 50){
+            alert('You can use our website!');
+        } else if (age > 50){
+            alert('good morning!');
+        }else{
+            alert('you can not use our website!');
+        }
+
+        (age > 18 && age <= 50) ? alert('You can use our website!') 
+            :(age > 50) ? alert('good morning!') : alert('you can not use our website!');
+
+        switch(age){
+            case "18":
+                alert('18');
+                break;
+            case "23":
+                alert('23');
+                break;
+            default:
+                alert('Welcome');
+                break;
+        }
+
+    </script>
+</body>
+</html>

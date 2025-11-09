@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function pow(num1, num2){
+        return num1 ** num2;
+      }
+      console.log(pow(2, 3)); // --> 8
+
+      var a = pow(2, 4);
+      console.log(a); // --> 16
+
+      var b = pow;
+      console.log(b); // -->ƒ pow(num1, num2){return num1 ** num2};
+
+      function user(name, family){
+        name = name; // --> local Variables
+        family = family; // --> local Variables
+        return name + ' ' + family;
+      }
+
+      console.log(user('amin', 'heidary'));
+
+      function a(num1, num2){
+        if (num2 === undefined){
+            num2 = 10;
+        }
+        return num1+num2;
+      }
+
+      function b(num1, num2=10){
+        return num1+num2;
+      }
+
+      function sum(...args){
+        
+      }
+    </script>
+  </body>
+</html>

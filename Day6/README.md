@@ -13,7 +13,7 @@
 - در این جلسه با موارد زیر آشناشدم
   1. `function name(parameter){code to be executed.}`
   2. مفهوم invoke
-  3. Deault value
+  3. Default value
   4. Function expression **VS** Function declaration
 
 ### ⁉️ سوالات و مشکلات :
@@ -32,3 +32,4 @@
 ## code-1
 
 ![توضیح](../image/Day%206/code.png)
+

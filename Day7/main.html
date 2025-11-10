@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      var i = 10;
+      while (i) {
+        document.getElementById("demo").innerHTML += "<div>hello</div>";
+        i--;
+      }
+
+      var age = 10;
+      while (age >= 10) {
+        age = prompt("how old are you?");
+      }
+
+      var i = 1;
+      do {
+        alert("hello");
+        i--;
+      } while (i > 0);
+
+      for (i = 10; i > 0; i--) {
+        if (i % 2 == 0) {
+          document.getElementById("demo").innerHTML += "<div>Yes</div>";
+        } else {
+          document.getElementById("demo").innerHTML += "<div>No</div>";
+        }
+      }
+      
+      var pas;
+      for (var i = 0; i < 3; i++) {
+        pass = prompt("what's yor paswords?");
+        if (pass == "123456") {
+          break;
+        }
+      }
+
+      for (var b = 0; b < 20; b++) {
+        if (b % 2 == 0) {
+          continue;
+        }
+
+        alert(b);
+      }
+    </script>
+  </body>
+</html>

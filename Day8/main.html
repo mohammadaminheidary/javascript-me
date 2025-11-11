@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var key = "className";
+      var car = {
+        type: "fiat",
+        model: 500,
+        color: "white",
+      };
+
+      var person = {};
+      person.firstName = "John";
+      person.lastName = "Doe";
+      person.age = 50;
+      person.eyeColor = "blue";
+
+      var student = {
+        name: "Amin",
+        family: "Heidary",
+        age: 19,
+        walk: function () {
+          var i = 4;
+          while (i > 0) {
+            console.log("--");
+            i--;
+          }
+        },
+        [key]: "c1",
+      };
+
+      console.log(student.name); // --> Amin
+      console.log(student["family"]); // --> Heidary
+      student.walk();
+      console.log(student.className);
+
+      if (student.name != undefined) {
+        alert("name exists");
+      }
+
+      if ("family" in student) {
+        alert("Yse");
+      }
+
+      for (i in student) {
+        if (typeof student[i] == "function") {
+          student[i]();
+        } else {
+          console.log(student[i]);
+        }
+      }
+
+      var list = {
+        43: "number 43",
+        55: "Hello",
+        1: 65,
+      };
+
+      for (pNumber in list) {
+        console.log(pNumber);
+      }
+    </script>
+  </body>
+</html>

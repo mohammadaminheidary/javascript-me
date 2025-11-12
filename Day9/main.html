@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var numString = "12345";
+      var num = Number(numString);
+
+      console.log(numString); // Output: "12345"
+      console.log(typeof numString); // Output: "string"
+      console.log(num); // Output: 12345
+      console.log(typeof num); // Output: "number"
+
+      var invalidString = "123abc";
+      var invalidNum = Number(invalidString);
+      console.log(invalidNum); // Output: NaN
+
+      var floatString = "12.34";
+      var floatNum = parseFloat(floatString);
+      console.log(floatNum); // Output: 12.34
+      var intnumber = parseInt(floatString);
+      console.log(intnumber); // Output: 12
+
+      var bool = true;
+      var boolNum = Number(bool);
+      console.log(boolNum); // Output: 1
+
+      var boolFalse = false;
+      var boolFalseNum = Number(boolFalse);
+      console.log(boolFalseNum); // Output: 0
+
+      var a = 123;
+      var aString = String(a);
+      console.log(aString, typeof aString); // Output: "123"
+      a = a.toString();
+      console.log(a, typeof a); // Output: "123"
+
+      var strtobool = "amin";
+      console.log(Boolean(strtobool)); // Output: true
+      var strtobool2 = "";
+      console.log(Boolean(strtobool2)); // Output: false
+
+      var numtoobool = 0;
+      console.log(Boolean(numtoobool)); // Output: false
+      var numtoobool2 = 456;
+      console.log(Boolean(numtoobool2)); // Output: true
+    </script>
+  </body>
+</html>

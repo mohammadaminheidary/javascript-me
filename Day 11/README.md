@@ -29,8 +29,8 @@
 
 ---
 ## code-1
-![code1](../)
+![code1](../image/Day%2011/code.png)
 
 ---
 ## code-2
-![code1](../image/Day%2010/code2.png)
+![code1](../image/Day%2011/code2.png)

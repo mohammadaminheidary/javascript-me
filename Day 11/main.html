@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>name:</label>
+    <input type="text" name="name" onchange="validate(event)"/>
+
+    <script>
+        var txt = "Hello ' ' World!";
+        var txt2 = 'Hello " " World!';
+
+        console.log(txt.length);   // Outputs: 16
+        console.log(txt2.length);  // Outputs: 16
+
+        function validate(event) {
+            if (event.target.value.length < 5) {
+                alert("Name must be at least 5 characters long.");
+            }else if (event.target.value.length >= 5) {
+                alert("wlecome " + event.target.value);
+                event.target.value = "";
+            }else {
+                alert("Invalid input.");
+            }
+        }
+
+        var note = "Hello good morning!"; 
+        console.log(note[0]);
+        var note = "Hellp good Morning";
+        console.log(note[0]);
+
+        var txt_test = "I am \\Mohammad \" Amin";
+        console.log(txt_test); 
+
+        var note2 = "Mohammad Amin Heidary"; 
+        console.log(note2.toUpperCase());
+        console.log(note2.toLowerCase());
+        console.log(note2.indexOf("A"));
+        console.log(note2.indexOf("Ali")); // -1
+        console.log(note2.includes('Amin'));
+        console.log(note2.includes('Ali'));
+        console.log(note2.slice(0,8));
+        console.log(note2.substr(0,4));
+        console.log(note2.replace('Heidary', 'Irani'));
+
+        var note3 = "  Hello   ";
+        console.log(note3);
+        console.log(note3.trim());
+
+        var num = "1,2,3,4,5,6";
+        console.log(num.split(","));
+    </script>
+
+</body>
+</html> 

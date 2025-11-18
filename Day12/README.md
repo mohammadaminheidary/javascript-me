@@ -38,21 +38,21 @@
 ![code1](../image/Day12/code.png)
 
 ---
-## code-1
+## code-2
 ![code1](../image/Day12/code2.png)
 
 ---
-## code-1
+## code-3
 ![code1](../image/Day12/code3.png)
 
 ---
-## code-1
+## code-4
 ![code1](../image/Day12/code4.png)
 
 ---
-## code-1
+## code-5
 ![code1](../image/Day12/code5.png)
 
 ---
-## code-1
+## code-6
 ![code1](../image/Day12/code6.png)

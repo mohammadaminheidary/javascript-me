@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var fruits = ["Apple", "Banana", "Cherry", "Apple"];
+      console.log(typeof fruits);
+      console.log(Array.isArray(fruits));
+      console.log(fruits instanceof Array);
+
+      for (var i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+      }
+
+      fruits.forEach(function (fruit, index) {
+        console.log(index + ": " + fruit);
+      });
+
+      var car = ["Toyota", "Honda", "Ford"];
+      function printArrayElements(element, index) {
+        console.log(index + ": " + element);
+      }
+      car.forEach(printArrayElements);
+
+      console.log(fruits);
+      fruits[1] = "Mango";
+      console.log(fruits);
+      fruits[fruits.length] = "Orange";
+      console.log(fruits);
+      fruits.push("Grapes");
+      console.log(fruits);
+
+      var names = ["John", "Jane", "Doe", "Smith"];
+      console.log(names.toString());
+      console.log(names.join(" - "));
+      console.log(names.pop());
+      console.log(names);
+
+      var names = ["John", "Jane", "Doe"];
+      var car = ["Toyota", "Honda", "Ford"];
+      var combined = names.concat(car);
+      console.log(combined);
+
+      var numbers = [10, 5, 8, 1, 7];
+      console.log(numbers);
+      var num = numbers.filter(function (value) {
+        return value > 5;
+      });
+      console.log(num);
+      var num2 = numbers.map(function (value) {
+        return value * 2;
+      });
+      console.log(num2);
+
+      var num3 = numbers.every(function (value) {
+        return value < 20;
+      });
+      console.log(num3);
+
+      var num4 = numbers.some(function (value) {
+        return value > 8;
+      });
+      console.log(num4);
+      console.log(numbers.indexOf(8));
+
+      var colors = ["Red", "Green", "Blue", "Yellow"];
+      console.log(colors);
+      console.log(colors.sort());
+
+      var numbers = [40, 100, 1, 5, 25, 10];
+      console.log(numbers);
+      numbers.sort(function (a, b) {
+        return a - b;
+      });
+      console.log(numbers);
+      numbers.sort(function (a, b) {
+        return b - a;
+      });
+      console.log(numbers);
+
+      console.log(Math.min(...numbers));
+      console.log(Math.max(...numbers));
+    </script>
+  </body>
+</html>

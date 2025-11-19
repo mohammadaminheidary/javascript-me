@@ -5,6 +5,9 @@ This page is a simple task management application built with HTML for the struct
 The task input field receives the text, and when the **Add** button is clicked, the corresponding JavaScript function creates a new item inside the `taskList`. The search section filters the tasks based on the typed text, and by clicking the **Done** button, the selected task is removed from the list.
 
 JavaScript handles user interactions through `onchange` and `onclick` events, processes the input values, adds or removes task elements in the page, and updates the remaining task count displayed in the (`remaining`) section. This results in a lightweight and fast system for managing everyday tasks.
+<div align="center">
+![Site](site.png)
+</div>
 
 ## 📝 توضیح کلی عملکرد صفحه TaskMaster Mini
 

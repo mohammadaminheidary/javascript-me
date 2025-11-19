@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMaster Mini</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">TaskMaster Mini</h1>
+
+      <!-- Add Task -->
+      <div class="add-box">
+        <input
+          type="text"
+          onchange="inputValue(event)"
+          id="taskInput"
+          placeholder="Write a task..."
+        />
+        <button id="addBtn" onclick="addwork()">Add</button>
+      </div>
+
+      <!-- Search -->
+      <div class="search-box">
+        <input
+          type="text"
+          onchange="searchWork(event)"
+          id="searchInput"
+          placeholder="Search task..."
+        />
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-box">
+        <button class="filter-btn" onclick="doneWork()" data-filter="done">
+          Done
+        </button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList"></ul>
+
+      <!-- Counter -->
+      <p class="counter">
+        <span id="remaining">The number of tasks left: 0</span>
+      </p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  direction: rtl;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-box,
+.search-box,
+.filter-box,
+.sort-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-box input,
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.filter-btn {
+  flex: 1;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#taskList li {
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 5px solid #6c63ff;
+}
+.task-text {
+  flex: 1;
+}
+
+.tag {
+  background: #6c63ff;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.counter {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.select-title {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.select-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}

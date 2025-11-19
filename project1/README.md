@@ -6,8 +6,9 @@ The task input field receives the text, and when the **Add** button is clicked, 
 
 JavaScript handles user interactions through `onchange` and `onclick` events, processes the input values, adds or removes task elements in the page, and updates the remaining task count displayed in the (`remaining`) section. This results in a lightweight and fast system for managing everyday tasks.
 <div align="center">
-![Site](site.png)
+    <img align="center" src="site.png" alt="My image" />
 </div>
+
 
 ## 📝 توضیح کلی عملکرد صفحه TaskMaster Mini
 

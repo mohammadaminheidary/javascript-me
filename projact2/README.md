@@ -55,4 +55,6 @@
 
 ## 📷 نتیجه نهایی
 
-## ![image priject](/site.png)
+<div align="center">
+    <img align="center" src="site.png" alt="My image" />
+</div>

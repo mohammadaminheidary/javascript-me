@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator" role="application" aria-label="ماشین‌حساب">
+      <section class="calculator__screen">
+        <div class="display">
+          <!--<div class="display__sub" aria-hidden="true">0</div> -->
+          <!--<div class="display__value" id="displayValue" value="0" aria-live="polite"> -->
+          <input
+            class="display__value"
+            type="text"
+            placeholder="0"
+            name="displayResult"
+            id="displayResult"
+          />
+          <!-- </div> -->
+        </div>
+        <div class="calc-controls">
+          <button
+            class="btn btn--ghost"
+            data-action="clear"
+            value="ac"
+            aria-label="پاک کردن همه"
+            onclick="btaction(this.value)"
+          >
+            AC
+          </button>
+          <button
+            class="btn btn--ghost"
+            data-action="delete"
+            value="del"
+            onclick="btaction(this.value)"
+            aria-label="حذف یک‌به‌یک"
+          >
+            DEL
+          </button>
+          <button
+            class="btn btn--ghost"
+            data-action="neg"
+            value="neg"
+            onclick="btaction(this.value)"
+            aria-label="تغییر علامت"
+          >
+            ±
+          </button>
+          <button
+            class="btn btn--op"
+            data-action="op"
+            value="/"
+            onclick="btaction(this.value)"
+            aria-label="تقسیم"
+          >
+            ÷
+          </button>
+        </div>
+      </section>
+
+      <section class="calculator__keys" aria-hidden="false">
+        <div class="keypad">
+          <!-- Row 1 -->
+          <button class="btn" value="7" onclick="btaction(this.value)">
+            7
+          </button>
+          <button class="btn" value="8" onclick="btaction(this.value)">
+            8
+          </button>
+          <button class="btn" value="9" onclick="btaction(this.value)">
+            9
+          </button>
+          <button
+            class="btn btn--op"
+            data-action="op"
+            value="*"
+            onclick="btaction(this.value)"
+            aria-label="ضرب"
+          >
+            ×
+          </button>
+
+          <!-- Row 2 -->
+          <button class="btn" value="4" onclick="btaction(this.value)">
+            4
+          </button>
+          <button class="btn" value="5" onclick="btaction(this.value)">
+            5
+          </button>
+          <button class="btn" value="6" onclick="btaction(this.value)">
+            6
+          </button>
+          <button
+            class="btn btn--op"
+            data-action="op"
+            value="-"
+            onclick="btaction(this.value)"
+            aria-label="منهای"
+          >
+            −
+          </button>
+
+          <!-- Row 3 -->
+          <button
+            class="btn"
+            data-value="1"
+            name="bt1"
+            value="1"
+            onclick="btaction(this.value)"
+          >
+            1
+          </button>
+          <button class="btn" value="2" onclick="btaction(2)">2</button>
+          <button class="btn" value="3" onclick="btaction(3)">3</button>
+          <button
+            class="btn btn--op"
+            data-action="op"
+            value="+"
+            onclick="btaction(this.value)"
+            aria-label="جمع"
+          >
+            +
+          </button>
+
+          <!-- Row 4 -->
+          <button
+            class="btn btn--zero"
+            value="0"
+            onclick="btaction(this.value)"
+          >
+            0
+          </button>
+          <button class="btn" value="." onclick="btaction(this.value)">
+            .
+          </button>
+          <button
+            class="btn btn--equal"
+            data-action="equals"
+            onclick="finalResult()"
+            aria-label="مساوی"
+          >
+            =
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

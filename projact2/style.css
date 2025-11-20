@@ -1,0 +1,129 @@
+:root {
+  --bg: #f5f7fa;
+  --panel: #ffffff;
+  --border: #e1e6ee;
+  --text: #2c3e50;
+  --muted: #98a1b3;
+  --accent: #4c8dff;
+  --accent-op: #ff7a5c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  direction: ltr;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: var(--panel);
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border);
+}
+
+/* صفحه نمایش */
+.display {
+  background: var(--panel);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border);
+}
+
+.display__value {
+  border: none;
+  outline: none;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 5px;
+  width: 316px;
+}
+/* دکمه‌ها */
+.btn {
+  border: none;
+  background: #ffffff;
+  color: var(--text);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.15s ease;
+}
+
+.btn:active {
+  transform: scale(0.94);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.btn--zero {
+  width: 100%;
+  border-radius: 40px;
+  grid-column: span 2;
+}
+
+/* عملگرها */
+.btn--op {
+  background: var(--accent);
+  color: white;
+}
+
+.btn--equal {
+  background: var(--accent-op);
+  color: white;
+  font-weight: 600;
+  border-radius: 40px;
+}
+
+/* کنترل‌ها */
+.calc-controls {
+  display: flex;
+  gap: 22px;
+  margin-top: 15px;
+}
+
+.btn--ghost {
+  background: #e8ecf3;
+  color: #4a5870;
+}
+
+/* شبکه دکمه‌ها */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.hint {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* واکنش‌گرا */
+@media (max-width: 420px) {
+  .btn {
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+  }
+  .btn--zero {
+    height: 60px;
+  }
+}

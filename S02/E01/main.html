@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // bad
+      function test(a) {
+        a = a || 1;
+        console.log(a);
+      }
+      test(0);
+
+      // good
+      function test2(a = 1) {
+        console.log(a);
+      }
+      test2(0);
+
+      var a = {
+        ali: 19,
+        amin: 20,
+        amir: 10,
+      };
+
+      console.log(a.amin);
+
+      var a = Math.pow(2, 4);
+      console.log(a);
+      var r = 2 ** 4;
+      console.log(r);
+
+      (function s() {
+        let t = (b = c = 1);
+      })();
+      //console.log(t); //t is not defined
+      console.log(b); // 1
+      console.log(c); // 1
+
+      (function n() {
+        let t = 1;
+        let h = t;
+        let q = b;
+      })();
+      console.log(t); //t is not defined
+      console.log(h); // //t is not defined
+      console.log(q); //t is not defined
+
+      const d = 1;
+      console.log(d);
+    </script>
+  </body>
+</html>

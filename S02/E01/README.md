@@ -1,7 +1,7 @@
 ![Work Report](../../image/baner/Untitled-1.jpg)
 ---
-<h3 align="right"><b>فصل دوم 🔹</b></h3>
-<h3 align="right"><b>قسمت: اول 🎬</b></h3>
+<h3 align="right"><b>🔹فصل دوم </b></h3>
+<h3 align="right"><b>🎬قسمت: اول </b></h3>
 <h3 align="right"><b>۱۴۰۴/۰۹/۰۳ 📆</b></h3>
 
 <h3 align="right"><b>"Best Practices in JavaScript Code" ✅</b></h3>

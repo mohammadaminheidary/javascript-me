@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="clicked">Click Me</button>
+    <script>
+        let obj = {
+            name: 'Mehran',
+            list:[1,2,3,4,5],
+
+            testFunc: function(){
+                console.log(this.name);
+                console.log(this.list);
+            }
+        }
+        obj.testFunc();
+    </script>
+  </body>
+</html>

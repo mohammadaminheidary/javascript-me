@@ -30,5 +30,5 @@
 ---
 ###### 4
 ## 🧪 تست‌ها و خروجی‌ها
-- ![Work Report](/code.png)
+- ![Work Report](../E02/code.png)
 > [Home](#home)

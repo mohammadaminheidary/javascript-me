@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="idddd">
+        <ul>
+            <li>list one</li>
+        </ul>
+    </div>
+
+    <table id="table1"></table>
+    <table id="table2"></table>
+    <button id="test1">click me</button>
+
+    <script>
+        'use strict';
+
+        let body = document.body;
+        let myDiv = body.childNodes[1];
+        let childcont = myDiv.childNodes.length;
+        console.log(myDiv.childNodes.length);
+        for (let i=0; i<childcont; i++){
+             console.log(myDiv.childNodes[i]);
+        }
+
+        console.log(myDiv.parentNode);
+
+        let ul = myDiv.childNodes[1];
+        console.log(ul.parentNode);
+        console.log(ul.nextSibling);
+        console.log(ul.previousSibling);
+
+        console.log(table1);
+    </script>
+  </body>
+</html>

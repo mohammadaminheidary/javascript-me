@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="id">
+        <ul>
+            <li>
+                one
+            </li>
+            <li>
+                two
+            </li>
+            <li>
+                three
+
+            </li>
+        </ul>
+        <ul class="number">
+            <li>
+                1
+            </li>
+            <li>
+                2
+            </li>
+            <li>
+                3
+            </li>
+        </ul>
+    </div>
+    <table id="tableOne" class="mytable"></table>
+    <table class="mytable "></table>
+    <script>
+        'use strict';
+        
+        // let myDiv = document.getElementById('id');
+        // console.log(myDiv);
+        // console.dir(myDiv);
+        // let myDiv1 = document.getElementsByTagName('div');  
+        // console.log(myDiv1);
+
+        // let myDiv2 = document.getElementsByClassName('mytable');
+        // console.log(myDiv2); 
+
+        // let table = document.querySelectorAll('table');
+        // console.log(table);
+
+        // let tableclass = document.querySelectorAll('table.mytable');
+        // console.log(tableclass);
+
+        // let tableid = document.querySelectorAll('table#tableOne');
+        // console.log(tableid);
+
+        let ul = document.querySelector('ul');
+        let liList = ul.querySelectorAll('li');
+        console.log(liList);
+
+        let ul1 = document.querySelector('ul.number');
+        let liList2 = ul1.querySelectorAll('li');
+        console.log(liList2);
+    </script>
+  </body>
+</html>

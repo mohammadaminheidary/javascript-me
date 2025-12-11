@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="mydiv">
+      <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
+      <ul class="number">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+    <table id="table_one"></table>
+    <script>
+      "use strict";
+
+      // let table = document.querySelector('table');
+      // console.log(table.nodeName);
+
+      let myDiv = document.getElementById("mydiv");
+      console.log(myDiv);
+      // console.log(myDiv.innerHTML);
+      // myDiv.innerHTML = "<p>Hello</p>";
+      // console.log(myDiv);
+
+      console.log(myDiv.outerHTML);
+      myDiv.outerHTML = "<a>Hello Worlds</a>";
+      console.log(myDiv);
+    </script>
+  </body>
+</html>

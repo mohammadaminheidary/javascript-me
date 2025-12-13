@@ -2,10 +2,10 @@
 ---
 <h3 align="right"><b>فصل دوم 🔹</b></h3>
 <h3 align="right"><b>قسمت: پنجم 🎬</b></h3>
-<h3 align="right"><b>۱۴۰۴/۰۹/۲۰ 📆</b></h3>
+<h3 align="right"><b>۱۴۰۴/۰۹/۲۲ 📆</b></h3>
 
 
-<h3 align="right"><b>"Dom serching"</b></h3>
+<h3 align="right"><b>"Attribute"</b></h3>
 
 ###### Home
 > [توضیحات](#1) - [چیزهایی که یاد گرفتم](#2) - [سوالات و مشکلات](#3) - [کد ها و خروجی ها](#4)

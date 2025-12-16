@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="getPlace()">Add List</button>
+    <div class="new-element"></div>
+    <script>
+      "use strict";
+      let myDive = document.getElementsByClassName("new-element")[0];
+      let newElem = document.createElement("ul");
+      newElem.className = "my-list";
+      newElem.innerHTML = '<li id="first">Item 1</li>';
+      myDive.append(newElem);
+
+      function creator(where) {
+        if (!(where in newElem)) {
+          alert("Invalid location! Adding to the end of the list.");
+          return;
+        }
+        let li = document.createElement("li");
+        li.innerHTML = "<strong>New Item</strong>";
+        myDive[where](li);
+
+        setTimeout(function () {
+          li.remove();
+        }, 2000);
+
+        let liCopy = li.cloneNode(true);
+        console.log(liCopy);
+
+        let liCopy2 = li.cloneNode(false);
+        console.log(liCopy2);
+      }
+
+      function getPlace() {
+        let user_input = prompt("where you want to add the element?");
+        creator(user_input);
+      }
+
+      let newDiv = document.createElement("div");
+      newDiv.appendChild(document.createElement("div"));
+      newDiv.appendChild(document.createTextNode("Hello World"));
+      document.body.append(newDiv);
+
+      // ==> Document Fragment 
+      let myFragment = document.createDocumentFragment();
+      myFragment.appendChild(document.createElement("div"));
+      myFragment.appendChild(document.createTextNode("Hello World"));
+      document.body.append(myFragment);
+    </script>
+  </body>
+</html>

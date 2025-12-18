@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="toggleP()">show/unshow</button>
+    <button onclick="changeColor()">Click To change Color</button>
+    <div id="test" class="box new hidden">
+      <p>Test Div</p>
+    </div>
+
+    <div class="color" style="background-color: lightcoral">
+      <p>
+        town actually movement flow apple aboard fire so identity article
+        process purple blank fifth far call direction graph am triangle tiny
+        given decide threw
+      </p>
+    </div>
+    <script>
+      "use strict";
+      let myDiv = document.getElementById("test");
+      console.log(myDiv.classList);
+      myDiv.classList.add("box2", "box3");
+      console.log(myDiv.classList);
+      myDiv.classList.remove("new");
+      console.log(myDiv.classList);
+
+      function toggleP() {
+        myDiv.classList.toggle("hidden");
+      }
+
+      let colorDiv = document.getElementsByClassName("color")[0];
+      function changeColor() {
+        colorDiv.style.backgroundColor = "blue";
+      }
+    </script>
+  </body>
+</html>

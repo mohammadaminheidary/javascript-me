@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scroll Full Demo</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      section {
+        height: 100vh;
+        padding: 40px;
+        border-bottom: 2px solid #ccc;
+        font-size: 24px;
+      }
+
+      #target {
+        margin: 80px auto;
+        width: 320px;
+        height: 220px;
+        border: 8px solid crimson;
+        padding: 20px;
+        overflow: auto;
+        background: #f2f2f2;
+      }
+
+      .inner {
+        height: 700px;
+      }
+
+      /* floating buttons */
+      .scroll-btns {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      button {
+        padding: 12px 16px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section>Section 1 (Top)</section>
+
+    <section>
+      Section 2
+
+      <div id="target">
+        <div class="inner">Scrollable Box Content</div>
+      </div>
+
+      <button onclick="showInfo()">Show Element Info</button>
+      <button onclick="scrollInside()">Scroll Inside Box</button>
+      <button onclick="scrollToTarget()">Scroll To Element</button>
+    </section>
+
+    <section>Section 3</section>
+    <section>Section 4 (Bottom)</section>
+
+    <!-- Floating Buttons -->
+    <div class="scroll-btns">
+      <button onclick="goTop()">⬆️ Top</button>
+      <button onclick="goBottom()">⬇️ Bottom</button>
+    </div>
+
+    <script>
+      const target = document.getElementById("target");
+
+      function showInfo() {
+        console.log(
+          "offsetLeft / offsetTop:",
+          target.offsetLeft,
+          target.offsetTop
+        );
+        console.log(
+          "clientLeft / clientTop:",
+          target.clientLeft,
+          target.clientTop
+        );
+        console.log(
+          "offsetWidth / offsetHeight:",
+          target.offsetWidth,
+          target.offsetHeight
+        );
+        console.log(
+          "clientWidth / clientHeight:",
+          target.clientWidth,
+          target.clientHeight
+        );
+        console.log(
+          "scrollTop / scrollHeight:",
+          target.scrollTop,
+          target.scrollHeight
+        );
+      }
+
+      function scrollInside() {
+        target.scrollTop += 150;
+      }
+
+      function scrollToTarget() {
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+
+      function goTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function goBottom() {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>
+  
